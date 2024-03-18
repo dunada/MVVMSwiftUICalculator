@@ -11,7 +11,7 @@ import SwiftUI
 struct MVVMSwiftUICalculatorApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            CalculatorView().environmentObject(CalculatorViewModel())
         }
     }
 }
